@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function palindrome(str) {
+
+
+ 			var cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+
+  			if (cleanedStr === cleanedStr.split("").reverse().join("")){
+   				 return true;
+ 			 }else{
+    			 return false;
+ 			 }
+  
+		}
+
+		document.write(palindrome("A man, a plan, a canal. Panama"));
+    	
+	</script>
+
+</body>
+</html>
